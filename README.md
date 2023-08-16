@@ -1,6 +1,5 @@
-# NodeJs-and-ReactJs-NasaProject -- On Going
-NodeJs Udemy course - ZTM 
-
+# NodeJs-and-ReactJs-NasaProject 
+Based on the Udemy NodeJs course by ZeroToMastery
 
 ✔ To clone and start the project at any time, follow bellow instructions:
 1. clone the project on your local system
