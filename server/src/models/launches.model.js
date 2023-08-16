@@ -8,7 +8,7 @@ const launch = {
   rocket: " explore x1",
   launchDate: new Date("December 27, 2025"),
   target: "blackhole :)",
-  customer: ["Nasa", "ZTM"],
+  customer: ["Nasa", "TSH"],
   upcoming: true,
   success: true,
 };
