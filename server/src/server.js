@@ -1,9 +1,9 @@
 const http = require("http");
+const path = require("path");
 const mongoose = require("mongoose");
 const app = require("./app");
 
-const MONGO_URL =
-  "mongodb+srv://nasa-api:cYJtRyGxF69adowZ@nasa-cluster.6kqia4h.mongodb.net/?retryWrites=true&w=majority";
+require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
 
 const { loadPlanetsData } = require("./models/planets.model");
 
@@ -17,6 +17,8 @@ mongoose.connection.once("open", () => {
 mongoose.connection.on("error", (err) => {
   console.error(err);
 });
+
+const MONGO_URL = process.env.MONGO_URL;
 
 async function startServer() {
   await mongoose.connect(MONGO_URL, {
